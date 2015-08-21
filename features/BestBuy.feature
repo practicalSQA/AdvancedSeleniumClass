@@ -5,7 +5,7 @@ Feature: go through bestbuy
              1.1. Verify Search field returns results valid to given query
              1.2. Verify invalid query returns some message
        2. Items page:
-             2.1. Trough search, go to any item page (e.g. hand blenders) and verify all filters:
+             2.1. Through search, go to any item page (e.g. hand blenders) and verify all filters:
                 2.1.1 Brand
                 2.1.2 Price
                 2.1.3 Color
