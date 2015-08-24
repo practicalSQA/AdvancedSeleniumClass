@@ -35,3 +35,8 @@ Feature: go through bestbuy
     Then Search for hand blender
     Then Verify quantity of items per page
     Then Verify Sort by Price Low to High
+
+  Scenario: Verify GitHub works
+#    Then Search for hand blender
+#    Then Verify quantity of items per page
+#    Then Verify Sort by Price Low to High
