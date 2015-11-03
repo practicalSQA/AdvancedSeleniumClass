@@ -14,40 +14,39 @@ Feature: Test plan sample
 
 
   Scenario: Main page functionality - footer navigation
-    Then Check footer menu "Store Services" with items
-    Then Check footer menu "PetSmart Cares" with items
-    Then Check footer menu "Shop With Us" with items
-    Then Check footer menu "Education" with items
-    Then Check footer menu "About PetSmart" with items
-
-  Scenario: Main page functionality - external links - facebook
-    Then Click on "Facebook" icon
-    Then Verify navigation to "PetSmart"
-
-  Scenario: Main page functionality - external links - hangouts
-    Then Click on "Google Plus" icon
-    Then Verify navigation to "PetSmart - Google+"
-
-  Scenario: Main page functionality - external links - twitter
-    Then Click on "Twitter" icon
-    Then Verify navigation to "PetSmart (@PetSmart) | Twitter"
-
-
-  Scenario: Main page fuctionality - external links- instagram
-    Then Click on "Instagram" icon
-    Then Verify user navigate to "Instagram"
-
-  Scenario: Main page functionality - external links - pinterest
-    Then Click on "Pinterest" icon
-    Then Verify navigation to "PetSmart on Pinterest"
-
-  Scenario: Main page functionality - external links - youtube
-    Then Click on "YouTube" icon
-    Then Verify user navigate to "YouTube"
-
-  Scenario: Main page functionality - upcoming events wrapper
-    Then Print out all upcoming events in wrapper
-
+    Then Check footer menu "" with items
+#
+#    Then Check footer menu "" with items
+#
+#    Then Check footer menu "" with items
+#
+#  Scenario: Main page functionality - external links - facebook
+#    Then Click on "facebook" icon
+#    Then Verify navigation to "Facebook"
+#
+#  Scenario: Main page functionality - external links - hangouts
+#    Then Click on "hangouts" icon
+#    Then Verify navigation to "hangouts"
+#
+#  Scenario: Main page functionality - external links - twitter
+#    Then Click on "twitter" icon
+#    Then Verify navigation to "twitter"
+#
+#  Scenario: Main page functionality - external links - instagram
+#    Then Click on "instagram" icon
+#    Then Verify navigation to "instagram"
+#
+#  Scenario: Main page functionality - external links - pinterest
+#    Then Click on "pinterest" icon
+#    Then Verify navigation to "pinterest"
+#
+#  Scenario: Main page functionality - external links - youtube
+#    Then Click on "youtube" icon
+#    Then Verify navigation to "youtube"
+#
+#  Scenario: Main page functionality - upcoming events wrapper
+#    Then Print out all upcoming events in wrapper
+#
 #  Scenario: Main page functionality - search - valid search
 #    Then In search type "smth valid"
 #    Then Check that some results returned
@@ -81,11 +80,11 @@ Feature: Test plan sample
 #    Then Set sorting to "price high to low"
 #    Then Verify correct sorting
 #
-  Scenario: Dog - Food - sorting - price low to high
-    Then In dog menu go to food
-    #Then Set sorting to "price low to high"
-    #Then Verify correct sorting
-
+#  Scenario: Dog - Food - sorting - price low to high
+#    Then In "Dog" menu go to "Food"
+#    Then Set sorting to "price low to high"
+#    Then Verify correct sorting
+#
 #  Scenario: Dog - Food - sorting - top rated
 #    Then In "Dog" menu go to "Food"
 #    Then Set sorting to "top rated"
