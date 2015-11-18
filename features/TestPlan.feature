@@ -1,6 +1,11 @@
 Feature: Test plan sample
 
+<<<<<<< HEAD
 
+=======
+#  base url: "http://www.petsmart.com/"
+# add basic url:"http://www.petsmart.com/"
+>>>>>>> d25c41c6fdfedb3026862c7db53881dcce9e9fbc
 
   Scenario: Main page functionality - header navigation
     Then Check that menu item "Dog" contains submenus
