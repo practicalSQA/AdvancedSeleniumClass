@@ -9,8 +9,6 @@ Feature: Test plan sample
 
     Then Check that menu item "Fish" contains submenus
 
-  ...
-
     Then Check that menu item "Sale" contains submenus
 
 
