@@ -1,6 +1,6 @@
 Feature: Test plan sample
 
-#  base url: "http://www.petsmart.com/"
+
 
   Scenario: Main page functionality - header navigation
     Then Check that menu item "Dog" contains submenus
