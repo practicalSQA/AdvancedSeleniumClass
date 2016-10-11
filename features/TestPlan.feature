@@ -2,26 +2,14 @@ Feature: Test plan sample
 
 
 #  base url: "http://www.petsmart.com/"
-# add basic url:"http://www.petsmart.com/"
 
-#one more commit via rubymine
+# ---- Landing page functionality ---
 
+  #verify that each header item in each cathegory is accessible to user
   Scenario: Main page functionality - header navigation
-    Then Check that menu item "Dog" contains submenus
 
-    Then Check that menu item "Cat" contains submenus
-
-    Then Check that menu item "Fish" contains submenus
-
-    Then Check that menu item "Test" contains submenus
-
-
+  #verify that each footer item in each cathegory is accessible to user
   Scenario: Main page functionality - footer navigation
-    Then Check footer menu "" with items
-
-    Then Check footer menu "" with items
-
-    Then Check footer menu "" with items
 
   Scenario: Main page functionality - external links - facebook
     Then Click on "facebook" icon
@@ -58,8 +46,14 @@ Feature: Test plan sample
     Then In search type "smth invalid"
     Then Check that no results returned (or some message)
 
-  Scenario: Main page functionality - pet services wrapper
-    Then in Pet service click on each item and verify that all promo messages are different
+  Scenario: Main page functionality - pet services wrapper - general ui
+    Then In Pet service click on each item and verify that all promo messages are different
+
+  Scenario: Main page functionality - pet services wrapper - link to all services
+
+  Scenario: Main page functionality - pet services wrapper - link for each pet service
+
+# ---- Dogs menu ---
 
   Scenario: Dog - Food and health - Brands
     Then In "Dog" menu go to "Food & health"
@@ -103,6 +97,8 @@ Feature: Test plan sample
     Then Set sorting to "new arrivals"
     Then Verify correct sorting
 
+# ---- Dog items - filtering ---
+
   Scenario: Dog - Food - filter - Brand
     Then In "Dog" menu go to "Food"
     Then Set filter for "Brand"
@@ -124,40 +120,24 @@ Feature: Test plan sample
     Then Verify correct sorting
 
   Scenario: Dog - Food - filter - Rating
-    Then In "Dog" menu go to "Food"
-    Then Set filter for "Rating"
-    Then Verify correct sorting
 
   Scenario: Dog - Food - filter - Ways To Shop
-    Then In "Dog" menu go to "Food"
-    Then Set filter for "Ways to Shop"
-    Then Verify correct sorting
 
   Scenario: Dog - Food - filter - Health Consideration
-    Then In "Dog" menu go to "Food"
-    Then Set filter for "Health Consideration"
-    Then Verify correct sorting
+
+# ---- Dog items - comparing ---
 
   Scenario: Dog - Food - comparing - adding 2 items
-    Then In "Dog" menu go to "Food"
-    Then Add 2 random items into compare mode
 
   Scenario: Dog - Food - comparing - adding 3 items
-    Then In "Dog" menu go to "Food"
-    Then Add 3 random items into compare mode
 
   Scenario: Dog - Food - comparing - adding more then 3 items
-    Then In "Dog" menu go to "Food"
-    Then Add 4 random items into compare mode
 
   Scenario: Dog - Food - comparing - removing 1-3 items
-    Then In "Dog" menu go to "Food"
-    Then Add 3 random items into compare mode
-    Then Remove one item from compare mode
-    Then Remove one item from compare mode
-    Then Remove one item from compare mode
 
-  Scenario: Dog - Shopping - 1 item to cart - all fine
+# ---- Dog items - shopping ---
+
+  Scenario: Dog - Shopping - 1 item to cart - happy path
 
   Scenario: Dog - Shopping - 1 item to cart - size, quantity and flavor not selected
 
@@ -165,7 +145,7 @@ Feature: Test plan sample
 
   Scenario: Dog - Shopping - 1 item to cart with proceeding
 
-  Scenario: Dog - Shopping - more then 1 item to cart with removing of 1 item
+  Scenario: Dog - Shopping - adding miltiple items to cart with partial removal prior to proceeding
 
 
 
