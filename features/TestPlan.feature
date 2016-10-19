@@ -1,6 +1,5 @@
 Feature: Test plan sample
 
-# my changes here
 #  base url: "http://www.petsmart.com/"
 
 # ---- Landing page functionality ---
