@@ -2,16 +2,24 @@ Feature: Test plan sample
 
 #  base url: "http://www.petsmart.com/"
 
+<<<<<<< Updated upstream
 # ---- Landing page functionality ---
 
   #verify that each header item in each cathegory is accessible to user
   Scenario: Main page functionality - header navigation
     Then Click on menu item "dog" in header navigation
+=======
+#one more commit via rubymine
+  @menu
+  Scenario: Main page functionality - header navigation
+
+>>>>>>> Stashed changes
     Then Check that menu item "Dog" contains submenus
     Then Click on menu item "cat" in header navigation
     Then Check that menu item "Cat" contains submenus
     Then Click on menu item "fish" in header navigation
     Then Check that menu item "Fish" contains submenus
+<<<<<<< Updated upstream
     Then Click on menu item "bird" in header navigation
     Then Check that menu item "Bird" contains submenus
     Then Click on menu item "reptile" in header navigation
@@ -30,14 +38,29 @@ Feature: Test plan sample
 
   #verify that each footer item in each cathegory is accessible to user
   Scenario: Main page functionality - footer navigation
+=======
 
+    Then Check that menu item "Bird" contains submenus
+
+  @footer
+  Scenario: Main page functionality - footer navigation
+
+    Then Check footer menu "Store Services" with items
+
+    Then Check footer menu "PetSmart Cares" with items
+>>>>>>> Stashed changes
+
+    Then Check footer menu "Shop With Us" with items
+
+  @facebook
   Scenario: Main page functionality - external links - facebook
-    Then Click on "facebook" icon
+
+    Then Click on "Facebook" icon
     Then Verify navigation to "Facebook"
 
-  Scenario: Main page functionality - external links - hangouts
-    Then Click on "hangouts" icon
-    Then Verify navigation to "hangouts"
+  Scenario: Main page functionality - external links - google plus
+    Then Click on "Google Plus" icon
+    Then Verify navigation to "Google Plus"
 
   Scenario: Main page functionality - external links - twitter
     Then Click on "twitter" icon
