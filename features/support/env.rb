@@ -1,11 +1,11 @@
 require 'rubygems'
 require 'selenium-webdriver'
 require 'cucumber'
-<<<<<<< Updated upstream
-=======
-require 'rspec'
-require 'pry'
->>>>>>> Stashed changes
+
 
 $driver = Selenium::WebDriver.for :chrome
-$wait = Selenium::WebDriver::Wait.new(:timeout => 10)
+
+#$driver = Selenium::WebDriver.for :firefox
+#$driver.get $basicurl
+$driver.manage.window.maximize
+$dropdown = Selenium::WebDriver::Support::Select

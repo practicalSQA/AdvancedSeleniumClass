@@ -1,8 +1,11 @@
-Before do
-  $driver.get("http://www.petsmart.com/")
-  logo_element = $wait.until { $driver.find_element(xpath: "//img[@class='ws-logo-image']")}
-end
+require 'rubygems'
+require 'selenium-webdriver'
+require 'cucumber'
 
-After do
-  $driver.quit
-end
+
+$driver = Selenium::WebDriver.for :chrome
+
+#$driver = Selenium::WebDriver.for :firefox
+#$driver.get $basicurl
+$driver.manage.window.maximize
+$dropdown = Selenium::WebDriver::Support::Select

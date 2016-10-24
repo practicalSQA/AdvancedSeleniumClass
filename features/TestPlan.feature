@@ -1,110 +1,71 @@
-Feature: Test plan sample
+Feature:
 
-#  base url: "http://www.petsmart.com/"
 
-<<<<<<< Updated upstream
-# ---- Landing page functionality ---
-
-  #verify that each header item in each cathegory is accessible to user
-  Scenario: Main page functionality - header navigation
-    Then Click on menu item "dog" in header navigation
-=======
-#one more commit via rubymine
-  @menu
   Scenario: Main page functionality - header navigation
 
->>>>>>> Stashed changes
     Then Check that menu item "Dog" contains submenus
-    Then Click on menu item "cat" in header navigation
+
     Then Check that menu item "Cat" contains submenus
-    Then Click on menu item "fish" in header navigation
+
     Then Check that menu item "Fish" contains submenus
-<<<<<<< Updated upstream
-    Then Click on menu item "bird" in header navigation
-    Then Check that menu item "Bird" contains submenus
-    Then Click on menu item "reptile" in header navigation
-    Then Check that menu item "Reptile" contains submenus
-    Then Click on menu item "small pet" in header navigation
-    Then Check that menu item "Small pet" contains submenus
-    Then Click on menu item "pet services" in header navigation
-    Then Check that menu item "Pet services" contains submenus
-    Then Click on menu item "SALE" in header navigation
-    Then Check that menu item "SALE" contains submenus
-    Then Click on menu item "giving back" in header navigation
-    Then Check that menu item "Giving back" contains submenus
-    Then Click on menu item "resource center" in header navigation
-    Then Check that menu item "Resource center" contains submenus
+
+    Then Check that menu item "Sale" contains submenus
 
 
-  #verify that each footer item in each cathegory is accessible to user
   Scenario: Main page functionality - footer navigation
-=======
-
-    Then Check that menu item "Bird" contains submenus
-
-  @footer
-  Scenario: Main page functionality - footer navigation
-
     Then Check footer menu "Store Services" with items
-
     Then Check footer menu "PetSmart Cares" with items
->>>>>>> Stashed changes
-
     Then Check footer menu "Shop With Us" with items
+    Then Check footer menu "Education" with items
+    Then Check footer menu "About PetSmart" with items
 
-  @facebook
   Scenario: Main page functionality - external links - facebook
-
     Then Click on "Facebook" icon
-    Then Verify navigation to "Facebook"
+    Then Verify navigation to "PetSmart"
 
-  Scenario: Main page functionality - external links - google plus
+  Scenario: Main page functionality - external links - hangouts
     Then Click on "Google Plus" icon
-    Then Verify navigation to "Google Plus"
+    Then Verify navigation to "PetSmart - Google+"
 
   Scenario: Main page functionality - external links - twitter
-    Then Click on "twitter" icon
-    Then Verify navigation to "twitter"
+    Then Click on "Twitter" icon
+    Then Verify navigation to "PetSmart (@PetSmart) | Twitter"
 
-  Scenario: Main page functionality - external links - instagram
-    Then Click on "instagram" icon
-    Then Verify navigation to "instagram"
+
+  Scenario: Main page fuctionality - external links- instagram
+    Then Click on "Instagram" icon
+    Then Verify user navigate to "Instagram"
 
   Scenario: Main page functionality - external links - pinterest
-    Then Click on "pinterest" icon
-    Then Verify navigation to "pinterest"
+    Then Click on "Pinterest" icon
+    Then Verify navigation to "PetSmart on Pinterest"
 
   Scenario: Main page functionality - external links - youtube
-    Then Click on "youtube" icon
-    Then Verify navigation to "youtube"
+    Then Click on "YouTube" icon
+    Then Verify user navigate to "YouTube"
 
   Scenario: Main page functionality - upcoming events wrapper
     Then Print out all upcoming events in wrapper
 
+  Scenario: Dog - Food - sorting - price low to high
+    Then In dog menu go to food
+
+    Then Set sorting to "Low to high" and verify correct sorting
+
   Scenario: Main page functionality - search - valid search
-    Then In search type "smth valid"
-    Then Check that some results returned
+    Then In search type Food
+    Then Check that some results returned Food
 
   Scenario: Main page functionality - search - invalid search
-    Then In search type "smth invalid"
-    Then Check that no results returned (or some message)
+    Then In search type Tanya
+    Then Check that no results "Tanya" returned and message "0 Results for:"
 
-  Scenario: Main page functionality - pet services wrapper - general ui
-    Then In Pet service click on each item and verify that all promo messages are different
-
-  Scenario: Main page functionality - pet services wrapper - link to all services
-
-  Scenario: Main page functionality - pet services wrapper - link for each pet service
-
-# ---- Dogs menu ---
+  Scenario: Main page functionality - pet services wrapper
+    Then in Pet service click on each item and verify that all promo messages are different
 
   Scenario: Dog - Food and health - Brands
     Then In "Dog" menu go to "Food & health"
     Then In "Featured Brands" check that each brand navigates to the page with brand specific items
-
-  Scenario: Dog - Food and health - top categories
-    Then In "Dog" menu go to "Food & health"
-    Then Check that each link in "Top Categories" works
 
   Scenario: Dog - Food - see 200 items verification
     Then In "Dog" menu go to "Food"
@@ -117,95 +78,55 @@ Feature: Test plan sample
 
   Scenario: Dog - Food - sorting - price high to low
     Then In "Dog" menu go to "Food"
-    Then Set sorting to "price high to low"
-    Then Verify correct sorting
-
-  Scenario: Dog - Food - sorting - price low to high
-    Then In "Dog" menu go to "Food"
-    Then Set sorting to "price low to high"
-    Then Verify correct sorting
+    Then Set sorting to "High to low" and verify correct sorting
 
   Scenario: Dog - Food - sorting - top rated
     Then In "Dog" menu go to "Food"
-    Then Set sorting to "top rated"
-    Then Verify correct sorting
+    Then Set sorting to "top rated" and verify correct  sorting
 
-  Scenario: Dog - Food - sorting - best sellers
+  Scenario: Rated
     Then In "Dog" menu go to "Food"
-    Then Set sorting to "best sellers"
-    Then Verify correct sorting
+    Then Rates
 
-  Scenario: Dog - Food - sorting - new arrivals
-    Then In "Dog" menu go to "Food"
-    Then Set sorting to "new arrivals"
-    Then Verify correct sorting
-
-# ---- Dog items - filtering ---
-
-  Scenario: Dog - Food - filter - Brand
-    Then In "Dog" menu go to "Food"
-    Then Set filter for "Brand"
-    Then Verify correct sorting
-
-  Scenario: Dog - Food - filter - Flavor
-    Then In "Dog" menu go to "Food"
-    Then Set filter for "Flavor"
-    Then Verify correct sorting
-
-  Scenario: Dog - Food - filter - Breed
-    Then In "Dog" menu go to "Food"
-    Then Set filter for "Breed"
-    Then Verify correct sorting
-
-  Scenario: Dog - Food - filter - Price
-    Then In "Dog" menu go to "Food"
-    Then Set filter for "Price"
-    Then Verify correct sorting
-
-  Scenario: Dog - Food - filter - Rating
-
-  Scenario: Dog - Food - filter - Ways To Shop
-
-  Scenario: Dog - Food - filter - Health Consideration
-
-# ---- Dog items - comparing ---
 
   Scenario: Dog - Food - comparing - adding 2 items
+    Then In "Dog" menu go to "Food"
 
   Scenario: Dog - Food - comparing - adding 3 items
+    Then In "Dog" menu go to "Food"
+    Then Add 3 random items into compare mode
 
   Scenario: Dog - Food - comparing - adding more then 3 items
+    Then In "Dog" menu go to "Food"
+    Then Add 4 random items into compare mode
 
   Scenario: Dog - Food - comparing - removing 1-3 items
+    Then In "Dog" menu go to "Food"
+    Then Add 3 random items into compare mode
+    Then From compare mode remove 1st item  and verify that item was removed
+    Then Tap Remove button to remove 2nd item ,  verify that item was removed
+    Then Uncheck box  to remove 3d item  and verify that item was removed
 
-# ---- Dog items - shopping ---
 
-  Scenario: Dog - Shopping - 1 item to cart - happy path
+  Scenario: Dog - Shopping - 1 item to cart - all fine
+    Then In "Dog" menu go to "Food"
+    Then Add random item to card
+    Then Choose size, flavor and quantity and add to cart
+    Then Verify that 1 item in cart
+
 
   Scenario: Dog - Shopping - 1 item to cart - size, quantity and flavor not selected
+    Then In "Dog" menu go to "Food"
 
   Scenario: Dog - Shopping - 1 item to cart with removing
+    Then In "Dog" menu go to "Food"
+    Then Add random item to card
+    Then Choose size, flavor and quantity and add to cart
+    Then Remove item from cart and verify that no items in cart
 
   Scenario: Dog - Shopping - 1 item to cart with proceeding
-
-  Scenario: Dog - Shopping - adding miltiple items to cart with partial removal prior to proceeding
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    Then In "Dog" menu go to "Food"
+    Then Add random item to card
+    Then Choose size, flavor and quantity and add to cart
+    Then Tap Checkout button and verify thet user on Checkout page
 
