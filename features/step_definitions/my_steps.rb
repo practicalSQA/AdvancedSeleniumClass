@@ -7,8 +7,8 @@ Then /^Check that menu item "([^"]*)" contains submenus$/ do |x|
   sleep 10
   listofsubmenu =$driver.find_elements :xpath => "//li[@class='ws-category-list-item ws-category-list-item-1 ws-category-list-item-odd pet-leftnav-family-item pet-leftnav-level1-item']"
   if listofsubmenu.empty?
-  then puts "fgfgfgfgffg"
-  else puts "we are the winners"
+  then puts "Something went wrong"
+  else puts "Works good.keep testing"
   end
 end
 #Scenario2: Main page functionality - footer navigation
@@ -34,8 +34,6 @@ Then /^Verify navigation to "([^"]*)"$/ do |site|
   $driver.switch_to.window $driver.window_handles.last
   assert $driver.title == "#{site}"
 end
-
-#Scenario9: Main page functionality - upcoming events wrapper
 
 Then /^Verify user navigate to "([^"]*)"$/ do |site2|
   $driver.switch_to.window $driver.window_handles.last
