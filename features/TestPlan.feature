@@ -1,4 +1,4 @@
-Feature:
+Feature: Testing Petsmart
 
 
   Scenario: Main page functionality - header navigation
