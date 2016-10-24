@@ -1,6 +1,4 @@
 Feature: Testing PetSmart.
-
-
   Scenario: Main page functionality - header navigation
 
     Then Check that menu item "Dog" contains submenus
