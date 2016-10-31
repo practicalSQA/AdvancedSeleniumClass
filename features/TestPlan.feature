@@ -1,6 +1,6 @@
 Feature: Testing PetSmart.
   Scenario: Main page functionality - header navigation
-###TEST
+
     Then Check that menu item "Dog" contains submenus
 
     Then Check that menu item "Cat" contains submenus
