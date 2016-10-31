@@ -9,7 +9,6 @@ Feature: Testing PetSmart.
 
     Then Check that menu item "Sale" contains submenus
 
-
   Scenario: Main page functionality - footer navigation
     Then Check footer menu "Store Services" with items
     Then Check footer menu "PetSmart Cares" with items
@@ -28,7 +27,6 @@ Feature: Testing PetSmart.
   Scenario: Main page functionality - external links - twitter
     Then Click on "Twitter" icon
     Then Verify navigation to "PetSmart (@PetSmart) | Twitter"
-
 
   Scenario: Main page fuctionality - external links- instagram
     Then Click on "Instagram" icon
@@ -85,7 +83,6 @@ Feature: Testing PetSmart.
   Scenario: Rated
     Then In "Dog" menu go to "Food"
     Then Rates
-
 
   Scenario: Dog - Food - comparing - adding 2 items
     Then In "Dog" menu go to "Food"
