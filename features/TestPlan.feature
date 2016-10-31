@@ -19,7 +19,7 @@ Feature: Testing PetSmart.
   Scenario: Main page functionality - external links - facebook
     Then Click on "Facebook" icon
     Then Verify navigation to "PetSmart"
-
+gfgh
   Scenario: Main page functionality - external links - hangouts
     Then Click on "Google Plus" icon
     Then Verify navigation to "PetSmart - Google+"
