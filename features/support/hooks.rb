@@ -2,7 +2,7 @@ require 'rubygems'
 require 'selenium-webdriver'
 require 'cucumber'
 
-
+hgj
 $driver = Selenium::WebDriver.for :chrome
 
 #$driver = Selenium::WebDriver.for :firefox
