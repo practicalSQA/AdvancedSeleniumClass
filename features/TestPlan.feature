@@ -8,7 +8,7 @@ Feature: Testing PetSmart.
     Then Check that menu item "Fish" contains submenus
 
     Then Check that menu item "Sale" contains submenus
-#delete_me
+
 
   Scenario: Main page functionality - footer navigation
     Then Check footer menu "Store Services" with items
