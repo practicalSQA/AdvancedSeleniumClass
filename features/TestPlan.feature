@@ -1,56 +1,23 @@
 Feature: Test plan sample
 
+
 #  base url: "http://www.petsmart.com/"
 
 # ---- Landing page functionality ---
 
   #verify that each header item in each cathegory is accessible to user
   Scenario: Main page functionality - header navigation
-    Then Click on menu item "dog" in header navigation
-#one more commit via rubymine
-  Scenario: Main page functionality - header navigation
-
-    Then Check that menu item "Dog" contains submenus
-    Then Click on menu item "cat" in header navigation
-    Then Check that menu item "Cat" contains submenus
-    Then Click on menu item "fish" in header navigation
-    Then Check that menu item "Fish" contains submenus
-    Then Click on menu item "bird" in header navigation
-    Then Check that menu item "Bird" contains submenus
-    Then Click on menu item "reptile" in header navigation
-    Then Check that menu item "Reptile" contains submenus
-    Then Click on menu item "small pet" in header navigation
-    Then Check that menu item "Small pet" contains submenus
-    Then Click on menu item "pet services" in header navigation
-    Then Check that menu item "Pet services" contains submenus
-    Then Click on menu item "SALE" in header navigation
-    Then Check that menu item "SALE" contains submenus
-    Then Click on menu item "giving back" in header navigation
-    Then Check that menu item "Giving back" contains submenus
-    Then Click on menu item "resource center" in header navigation
-    Then Check that menu item "Resource center" contains submenus
-
 
   #verify that each footer item in each cathegory is accessible to user
   Scenario: Main page functionality - footer navigation
-    Then Check that menu item "Bird" contains submenus
-
-  Scenario: Main page functionality - footer navigation
-
-    Then Check footer menu "Store Services" with items
-
-    Then Check footer menu "PetSmart Cares" with items
-
-    Then Check footer menu "Shop With Us" with items
 
   Scenario: Main page functionality - external links - facebook
-
-    Then Click on "Facebook" icon
+    Then Click on "facebook" icon
     Then Verify navigation to "Facebook"
 
-  Scenario: Main page functionality - external links - google plus
-    Then Click on "Google Plus" icon
-    Then Verify navigation to "Google Plus"
+  Scenario: Main page functionality - external links - hangouts
+    Then Click on "hangouts" icon
+    Then Verify navigation to "hangouts"
 
   Scenario: Main page functionality - external links - twitter
     Then Click on "twitter" icon
@@ -179,23 +146,3 @@ Feature: Test plan sample
   Scenario: Dog - Shopping - 1 item to cart with proceeding
 
   Scenario: Dog - Shopping - adding miltiple items to cart with partial removal prior to proceeding
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
