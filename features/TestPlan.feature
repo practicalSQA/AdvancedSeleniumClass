@@ -4,6 +4,7 @@ Feature: Test plan sample
 #  base url: "http://www.petsmart.com/"
 
 # ---- Landing page functionality ---
+# this comment is introduced by Olga Gorpynich to test git capabilities
 
   #verify that each header item in each cathegory is accessible to user
   Scenario: Main page functionality - header navigation
